@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+      <style>
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+.services-section{
+  background: url("https://images.unsplash.com/photo-1521791136064-7986c2920216?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2VydmljZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+  background-size: cover;
+  padding: 100px 0;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: #82ccdd;
+  margin: 40px auto;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box{
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.service-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #82ccdd;
+  color: #82ccdd;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon{
+  background: #82ccdd;
+  color: #ddd;
+}
+.service-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
+
+@media screen and (max-width:960px) {
+  .service-box{
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service-box{
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .service-box{
+    max-width: 100%;
+  }
+}
+nav{
+
+  background-color: #82ccdd;
+}
+
+      </style>
+  </head>
+  <body>
+    <nav>
+      <a href="home.html">Home</a>
+    </nav>
+    <div class="services-section">
+      <div class="inner-width">
+        <h1 class="section-title">Our Services</h1>
+        <div class="border"></div>
+        <div class="services-container">
+
+          <div class="service-box">
+            <div class="service-icon">
+              <a href="Service1.html">
+              <i class="fas fa-cogs"></i>
+              </a>
+            </div>
+            <div class="service-title">Engine Overhaul</div>
+            <div class="service-desc">
+             The engine is a heart of any vehicle and we are cardiologists.
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <a href="Service2.html">
+              <i class="fab fa-500px"></i>
+              </a>
+            </div>
+            <div class="service-title">Power Steering</div>
+            <div class="service-desc">
+              We will check the power steering system for all types of engine.
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+             <a href="Service3.html">
+              <i class="fas fa-tools"></i>
+            </a>
+            </div>
+            <div class="service-title">Smog Check</div>
+            <div class="service-desc">
+              Are you sure is everything okey with your exhaust system?
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+            <a href="Service4.html">
+              <i class="fas fa-oil-can"></i>
+            </a>
+            </div>
+            <div class="service-title">Oil Change</div>
+            <div class="service-desc">
+              You must change the oil at least two times a year for best performance.
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+            <a href="Service5.html">
+              <i class="fas fa-car"></i>
+            </a>
+            </div>
+            <div class="service-title">Tyre Balancing</div>
+            <div class="service-desc">
+              You will enjoy riding your automobiles with balanced wheels.
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+            <a href="Service6.html">
+              <i class="fas fa-car-crash"></i>
+            </a>
+            </div>
+            <div class="service-title">Fleet Service</div>
+            <div class="service-desc">
+              We can diagnose your vehicle and solve the issue within an hour.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
